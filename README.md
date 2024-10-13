@@ -40,27 +40,21 @@ This repository contains the coursework for COE 352, focusing on advanced scient
 # Installation
 To get started with the coursework, follow the instructions below
 
-## Cloning Repository
+## Setting Up Repository
+1. clone the repository:
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/COE352-Coursework.git
 
 # Navigate into the project directory
-cd COE352-Coursework
-
-# Install required packages
-pip install -r requirements.txt
+cd COE-352
 ```
+2. Install **`requirements.txt`** file:
 
+   
 ## Running Tests with pytest
 
 To ensure the quality of the code, we use `pytest` for running our test suite. Follow the instructions below to set up and run the tests.
 
-### 1. Install pytest
+Once `pytest` has been installed (run the **`requirements.txt`** file), to test the files, particularly for **[Project 1](Project_1)**:
 
-If you don't have `pytest` installed, you can install it using `pip`:
-
-```bash
-pip install pytest
-
-```
