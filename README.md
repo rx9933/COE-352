@@ -24,16 +24,16 @@ This repository contains the coursework for COE 352, focusing on advanced scient
 
 # Projects
 - **[Project 1](Project_1)**: A linear spring-mass system solver using an explicitly coded SVD decomposition (for computing matrix inversions).
-### Files:
-- **`linear_spring.py`**: The main script that implements the linear spring-mass system solver. This file contains the logic for setting up the system, applying forces, and solving for displacements using the SVD method.
+  ### Files:
+  - **`linear_spring.py`**: The main script that implements the linear spring-mass system solver. This file contains the logic for setting up the system, applying forces, and solving for displacements using the SVD method.
+    
+  - **`mysvd.py`**: An implementation of the Singular Value Decomposition (SVD) algorithm. This file includes the Gram-Schmidt process and other required computations to facilitate matrix inversion.
+    
+  - **`test_linear_spring.py`**: A set of unit tests for validating the functionality of the `linear_spring.py` script. This file uses `pytest` to ensure the accuracy of the spring-mass system solver.
+    
+  - **`test_svd.py`**: A collection of unit tests for the SVD implementation in `mysvd.py`. This file also employs `pytest` to confirm that the SVD calculations are correct and reliable.
   
-- **`mysvd.py`**: An implementation of the Singular Value Decomposition (SVD) algorithm. This file includes the Gram-Schmidt process and other required computations to facilitate matrix inversion.
-  
-- **`test_linear_spring.py`**: A set of unit tests for validating the functionality of the `linear_spring.py` script. This file uses `pytest` to ensure the accuracy of the spring-mass system solver.
-  
-- **`test_svd.py`**: A collection of unit tests for the SVD implementation in `mysvd.py`. This file also employs `pytest` to confirm that the SVD calculations are correct and reliable.
-
-<br />
+  <br />
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#installation)
 
