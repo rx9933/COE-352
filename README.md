@@ -6,7 +6,7 @@
 
 <br />
 
-* * * * *
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#purpose)
 
 # Purpose
 This repository contains the coursework for COE 352, focusing on advanced scientific computation techniques and methodologies. The projects within this repository aim to deepen understanding and application of scientific computation in various contexts.
