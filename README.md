@@ -12,16 +12,12 @@
 This repository contains the coursework for COE 352, focusing on advanced scientific computation techniques and methodologies. The projects within this repository aim to deepen understanding and application of scientific computation in various contexts.
 
 <br />
-<!---
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#homework)
--->
- --- --- --- ---
+
 # Homework
 - **[Homework 3](HW/hw3.ipynb)**: A finite difference analysis for Forward Euler, Backward Euler, and Trapezoidal Method.
   
 <br />
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#projects)
 
 # Projects
 - **[Project 1](Project_1)**: A linear spring-mass system solver using an explicitly coded SVD decomposition (for computing matrix inversions).
@@ -36,7 +32,6 @@ This repository contains the coursework for COE 352, focusing on advanced scient
   
   <br />
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#installation)
 
 # Installation
 To get started with the coursework, follow the instructions below
