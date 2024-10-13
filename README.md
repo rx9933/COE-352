@@ -12,9 +12,10 @@
 This repository contains the coursework for COE 352, focusing on advanced scientific computation techniques and methodologies. The projects within this repository aim to deepen understanding and application of scientific computation in various contexts.
 
 <br />
-
+<!---
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)](#homework)
-
+-->
+ --- --- --- ---
 # Homework
 - **[Homework 3](HW/hw3.ipynb)**: A finite difference analysis for Forward Euler, Backward Euler, and Trapezoidal Method.
   
