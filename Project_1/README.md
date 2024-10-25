@@ -1,4 +1,4 @@
-## **[Project 1](Project_1)**: A linear spring-mass system solver using an explicitly coded SVD decomposition (for computing matrix inverses).
+## **[Project 1]**: A linear spring-mass system solver using an explicitly coded SVD decomposition (for computing matrix inverses).
 
 Notes about project:
 1. The program has outputs for "internal force vectors" which are the same as the "internal stress vectors". Note that we do not have a spring cross-sectional area to consider, so the two terms are interchangeable.
@@ -9,3 +9,7 @@ The free-free system has no external constraints or boundary conditions on the s
   Rigid body motion would not change the relative positions of the masses or the spring elongations, so the system would have multiple possible solutions for the displacements (no unique solutions).
 * Unique Solution/Singular Matrix: The stiffness matrix (K) is singular and non-invertible; there is a rank deficiency (rank(K) <= # Degrees of Freedom). Mathematically, there are eigenvalues of value 0 in the stiffness matrix, causing infinite or undefined displacements as solutions to the system of equations Ku = f (where u is the nodal displacement, f is the net force).
 Thus we cannot provide a unique solution for a free-free spring-mass system; there are infinite solutions, and to determine a single valid solution, we require at least one more boundary condition (i.e. by fixing one (or both) of the spring-mass system's ends), fixing an arbitrary set of points within the system, etc.).
+
+Proof of singular K matrix:
+$`K = A^{T} C A`$ where $`A ~`$ transformation of system configuration and $`C ~`$ positive semi-definite matrix of spring constants (material properites). Then, we seek to solve $`Ku = f`$ for $`u`$, the displacements, given $`f`$  as the applied forces (generally by mass(es) weight). 
+We notice $`A`$ to be non-square for a free-free system; $`A \in R^{d,d-1}`$ where $`u \in R^{d}`$ and $`C \in R^{d, d}`$ (`$d \in R$`, the degrees of freedom for the system) . Thus, we notice $`K`$ to be rank deficient ($`K \in R^{d-1, d-1} `$
