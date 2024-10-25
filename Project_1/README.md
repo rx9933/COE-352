@@ -12,4 +12,4 @@ Thus we cannot provide a unique solution for a free-free spring-mass system; the
 
 Proof of singular $`K`$ matrix:
 $`K = A^{T} C A`$ where $`A ~`$ transformation of system configuration and $`C ~`$ positive semi-definite matrix of spring constants (material properites). Then, we seek to solve $`Ku = f`$ for $`u`$, the displacements, given $`f`$  as the applied forces (generally by mass(es) weight). 
-We notice $`A`$ to be non-square for a free-free system; $`A \in R^{d,d-1}`$ where $`u \in R^{d}`$ and $`C \in R^{d, d}`$ . Thus, we notice $`K`$ to be rank deficient ($`K \in R^{d-1, d-1} `$). 
+We notice $`A`$ to be non-square for a free-free system; $`A \in R^{d \times d-1}`$ where $`u \in R^{d}`$ and $`C \in R^{d \times d}`$ . Thus, we notice $`K`$ to be rank deficient ($`K \in R^{d-1 \times d-1} `$). 
