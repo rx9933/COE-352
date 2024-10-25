@@ -1,4 +1,5 @@
-## [Project 1](Project_1)**: A linear spring-mass system solver using an explicitly coded SVD decomposition (for computing matrix inverses).
+## **[Project 1](Project_1)**: A linear spring-mass system solver using an explicitly coded SVD decomposition (for computing matrix inverses).
+
 Notes about project:
 1. The program has outputs for "internal force vectors" which are the same as the "internal stress vectors". Note that we do not have a spring cross-sectional area to consider, so the two terms are interchangeable.
 2. Only 2 spring-mass systems are considered: fixed-fixed (both ends of the spring system are fixed) and fixed-free (same as free-fixed, one end of the spring system is fixed, one end is free).
