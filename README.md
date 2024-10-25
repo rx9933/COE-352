@@ -61,5 +61,6 @@ Once `pytest` has been installed (run the **`requirements.txt`** file), to test 
    ```
 2. Run `pytest`:
    ```bash
-   pytest
+   python3 -m pytest
+   
    ```
