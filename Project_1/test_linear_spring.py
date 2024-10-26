@@ -1,6 +1,6 @@
 import numpy as np
 import pytest
-from linear_spring import solve_spring_mass_system  # Replace with actual module name
+from linear_spring import solve_spring_mass_system  
 
 def test_spring_mass_system_fixed_fixed():
     # Input parameters for the first test case
@@ -9,7 +9,6 @@ def test_spring_mass_system_fixed_fixed():
     masses = [1, 1, 1]  # Example masses (in kg)
     boundary_condition = "fixed-fixed"  # Boundary condition
 
-    # Call the function
     u, elongations, stresses, cond_num = solve_spring_mass_system(num_springs, spring_constants, masses, boundary_condition)
 
     # Expected values for fixed-fixed boundary condition
@@ -24,6 +23,36 @@ def test_spring_mass_system_fixed_fixed():
     assert np.allclose(stresses, expected_stresses, atol=1e-3)
     assert np.isclose(cond_num, expected_cond_num, atol=1e-5)
 
+
+
+        
+    # Fixed-fixed boundary condition
+    num_springs = 3
+    spring_constants = np.array([10, 15, 20])  # Spring constants (N/m)
+    masses = np.array([2, 3])  # Masses (kg)
+    boundary_condition = "fixed-fixed"  # Fixed-fixed boundary condition
+
+
+    # Call the function with fixed-fixed boundary condition
+    u, elongations, stresses, cond_num = solve_spring_mass_system(
+        num_springs, spring_constants, masses, boundary_condition
+    )
+
+    # Expected values for fixed-fixed boundary condition 
+    expected_displacements = np.array([1.73561538, 1.58469231])  
+    expected_elongations = np.array([1.73561538, -0.15092306999999994, -1.58469231])    # Elongations 
+    expected_stresses = np.array([17.3561538, -2.26384605,-31.6938462])      
+    expected_cond_num = 3.2287435354623297                      
+
+    # Assertions to validate the outputs
+    assert np.allclose(u, expected_displacements, atol=1e-3), "Displacement values do not match for fixed-fixed boundary!"
+    assert np.allclose(elongations, expected_elongations, atol=1e-3), "Elongation values do not match for fixed-fixed boundary!"
+    assert np.allclose(stresses, expected_stresses, atol=1e-3), "Stress values do not match for fixed-fixed boundary!"
+    assert np.isclose(cond_num, expected_cond_num, atol=1e-5), "Condition number does not match for fixed-fixed boundary!"
+
+
+
+
 def test_spring_mass_system_fixed_free():
     # Input parameters for the second test case
     num_springs = 3
@@ -31,7 +60,6 @@ def test_spring_mass_system_fixed_free():
     masses = [1, 1, 1]  # Example masses (in kg)
     boundary_condition = "fixed-free"  # Boundary condition
 
-    # Call the function
     u, elongations, stresses, cond_num = solve_spring_mass_system(num_springs, spring_constants, masses, boundary_condition)
 
     # Expected values for fixed-free boundary condition
@@ -45,6 +73,28 @@ def test_spring_mass_system_fixed_free():
     assert np.allclose(elongations, expected_elongations, atol=1e-3)
     assert np.allclose(stresses, expected_stresses, atol=1e-3)
     assert np.isclose(cond_num, expected_cond_num, atol=1e-5)
+
+        
+    num_springs = 2
+    spring_constants = np.array([10, 15])  # Spring constants (N/m)
+    masses = np.array([2, 3])  # Masses (kg)
+    boundary_condition = "fixed-free"  # Boundary condition
+
+    # Call the function
+    u, elongations, stresses, cond_num = solve_spring_mass_system(num_springs, spring_constants, masses, boundary_condition)
+
+    # Expected values for fixed-free boundary condition
+    expected_displacements = np.array([4.905, 6.867])  # Calculated expected displacements
+    expected_elongations = np.array([4.905, 1.962])  # Calculated expected elongations
+    expected_stresses = np.array([49.05, 29.43])  # Calculated expected stresses  
+    expected_cond_num = 8.54970354689117  # Example condition number
+
+    # Assertions to validate the outputs
+    assert np.allclose(u, expected_displacements, atol=1e-3), "Displacement values do not match!"
+    assert np.allclose(elongations, expected_elongations, atol=1e-3), "Elongation values do not match!"
+    assert np.allclose(stresses, expected_stresses, atol=1e-3), "Stress values do not match!"
+    assert np.isclose(cond_num, expected_cond_num, atol=1e-5), "Condition number does not match!"
+
 
 
 def test_spring_mass_system_invalid_fixed_fixed():
