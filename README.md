@@ -35,8 +35,11 @@ This repository contains the coursework for COE 352, focusing on advanced scient
 - **[Project 2](Project_2)**: A Finite Element Method code for a 1D heat equation PDE. More details about question found in folder.
   ### Files:
   - **`FEM.ipynb`**: jupyter notebook with code
+    
   -  **`FEM.pdf`** for a pdf version of FEM.ipynb (includes pre-graphed plots/already run code)
-  -  **`COE 352 Project 2 - Derivation.pdf`** for all math derivations for FEM implementation
+
+  -   **`COE 352 Project 2 - Derivation.pdf`** for all math derivations for FEM implementation
+
   <br />
 # Installation
 To get started with the coursework, follow the instructions below
